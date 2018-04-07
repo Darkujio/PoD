@@ -1,0 +1,160 @@
+/*Импортируем шрифт*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*Основные стили*/
+body {
+    font-family: "Roboto";
+    font-size: 24px;
+    background-color: #EFEFEF;
+}
+
+.centered {
+    text-align: center;
+}
+
+/*Стили навигации*/
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .5s;
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 30px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/*Стили главной страницы*/
+home {
+    position: fixed;
+    top: 51px;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: calc(100% - 51px);
+}
+
+home span {
+    font-family: "Roboto Light";
+    font-size: 36px;
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+}
+
+/*Стили блока история*/
+history {
+    display: block;
+    position: relative;
+    margin-top: 180%;
+    width: 100%;
+    height: 100%;
+    background: #EFEFEF;
+    padding-bottom: 100px;
+}
+
+.description {
+    padding: 10px;
+    margin: 0 10%;
+    background-color: white;
+    font-family: "Roboto";
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.description img {
+    width: 50%;
+}
+
+/*Стили блока состав*/
+members {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: #EFEFEF;
+    padding-bottom: 100px;
+}
+
+members img {
+    display: none;
+    margin-left: 15%;
+    width: 70%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/*Класс который делает видимым элемент*/
+.vis {
+    display: block;
+}
+
+/*Стили для PopUp`ов*/
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:5%;
+}
+.b-popup-content{
+    margin:40px auto 0px auto;
+    width:80%;
+    min-height: 200px;
+    padding:10px;
+    background-color: #EFEFEF;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.b-popup-content img {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 3%;
+}
+
+/*Стили для блока контактов*/
+contacts {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: #EFEFEF;
+    padding-bottom: 50px;
+}
+
+/*Медиа запросы обработки размера устройства*/
+@media screen and (max-device-width: 2600px) {
+    history {
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-device-width: 1920px) {
+    history {
+        margin-top: 80%;
+    }
+}
+
+@media screen and (max-device-width: 1024px) {
+    history {
+        margin-top: 160%;
+    }
+}
+
+@media screen and (max-device-width: 400px) {
+    history {
+        margin-top: 210%;
+    }
+}
